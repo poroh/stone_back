@@ -6,7 +6,8 @@
     "scripts": {
         "backend": "node app.js",
         "lint": "eslint ./",
-        "test": "./node_modules/.bin/mocha"
+        "test": "./node_modules/.bin/mocha",
+        "cover": "istanbul cover _mocha"
     },
     "pre-commit": [
         "lint"
@@ -21,6 +22,7 @@
         "eslint": "^4.11.0",
         "chai": "^3.5.0",
         "chai-http": "^2.0.1",
-        "mocha": "^2.4.5"
+        "mocha": "^2.4.5",
+        "istanbul": "^0.4.5"
     }
 }
