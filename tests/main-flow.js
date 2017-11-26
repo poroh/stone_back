@@ -1,3 +1,5 @@
+process.env.NODE_ENV = 'test';
+
 const chai     = require('chai');
 const chaiHttp = require('chai-http');
 const server   = require('../app');
@@ -7,7 +9,7 @@ const TestGame = require('./test-game');
 
 chai.use(chaiHttp);
 
-describe('Books', () => {
+describe('Stone Snip Paper', () => {
     beforeEach((done) => {
         done();         
     });

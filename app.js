@@ -2,6 +2,9 @@ const express      = require('express');
 const cookieParser = require('cookie-parser');
 const SessionDB    = require('./src/session-db');
 const UserDB       = require('./src/user-db');
+const SetupLog     = require('./src/log');
+
+SetupLog();
 
 const userDB    = new UserDB();
 const sessionDB = new SessionDB(userDB); 
