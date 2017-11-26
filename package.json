@@ -1,28 +1,29 @@
 {
-    "name": "stone_back",
-    "version": "1.0.0",
-    "description": "Stone Scissors Paper",
-    "main": "app.js",
-    "scripts": {
-        "backend": "node app.js",
-        "lint": "eslint ./",
-        "test": "./node_modules/.bin/mocha",
-        "cover": "istanbul cover _mocha"
-    },
-    "pre-commit": [
-        "lint"
-    ],
-    "author": "Dmitry Poroh",
-    "dependencies": {
-        "express": "^4.16.2",
-        "cookie-parser": "^1.4.3",
-        "random-name": "^0.1.2"
-    },
-    "devDependencies": {
-        "eslint": "^4.11.0",
-        "chai": "^3.5.0",
-        "chai-http": "^2.0.1",
-        "mocha": "^2.4.5",
-        "istanbul": "^0.4.5"
-    }
+  "name": "stone_back",
+  "version": "1.0.0",
+  "description": "Stone Scissors Paper",
+  "main": "app.js",
+  "scripts": {
+    "backend": "node app.js",
+    "lint": "eslint ./",
+    "test": "./node_modules/.bin/mocha",
+    "cover": "istanbul cover _mocha"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "author": "Dmitry Poroh",
+  "dependencies": {
+    "express": "^4.16.2",
+    "cookie-parser": "^1.4.3",
+    "random-name": "^0.1.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "coveralls": "^3.0.0",
+    "eslint": "^4.11.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^2.4.5"
+  }
 }
