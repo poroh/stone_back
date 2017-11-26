@@ -15,6 +15,7 @@ class Game {
         this.fatalityId = null;
         this.winner   = null;
         this.roundTimer = null;
+        this.startRound();
         this.log('is created');
     }
 
@@ -136,6 +137,7 @@ class Game {
                 return { state: 'over' };
             } else {
                 this.state = 'play';
+                this.startRound();
             }
         }
         return this.json(user);
